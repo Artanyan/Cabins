@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -69,10 +70,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
-.header {
-  z-index: 3;
-}
-
 .header__container {
   min-width: 1000px;
   height: 600px;
@@ -93,11 +90,23 @@ h1, h2, h3, h4, h5, h6 {
 .header__ul {
   display: flex;
 }
+@media all and (max-width: 767px) {
+  .header__ul {
+    display: grid;
+    justify-content: center;
+  }
+}
 
 .header__li {
   display: flex;
   align-items: center;
   padding-right: 40px;
+}
+@media all and (max-width: 767px) {
+  .header__li {
+    justify-content: center;
+    padding: 20px;
+  }
 }
 .header__li a {
   color: #ffffff;
@@ -119,6 +128,11 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 rgba(0, 0, 0, 0.24), 0 rgba(0, 0, 0, 0.19);
   color: #ffffff;
   background-color: #606B74;
+}
+@media all and (max-width: 767px) {
+  .header__button {
+    margin: 0px auto;
+  }
 }
 
 .main {
@@ -357,6 +371,65 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: underline;
 }
 
+@media all and (max-width: 767px) {
+  /* Гамбургер іконка */
+  .menu-btn {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+  }
+  .menu-btn span {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    transition: all 0.5s;
+  }
+  .menu-btn span:nth-of-type(2) {
+    top: calc(50% - 5px);
+  }
+  .menu-btn span:nth-of-type(3) {
+    top: calc(50% + 5px);
+  }
+  /* Змінюємо гамбургер іконку, коли меню відчинено */
+  .menu-btn.active {
+    position: fixed;
+  }
+  .menu-btn.active span:nth-of-type(1) {
+    display: none;
+  }
+  .menu-btn.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);
+  }
+  .menu-btn.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);
+  }
+  /* Меню, яке буде зʼявлятися */
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: #222f33;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+  }
+  .menu.active {
+    transform: translateX(0);
+  }
+  .menu li {
+    list-style-type: none;
+  }
+}
 body {
   max-width: 1000px;
   margin: auto;
