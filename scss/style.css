@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 .header__container {
   min-width: 1000px;
   height: 600px;
-  background-image: url("/images/Background1.png");
+  background-image: url(../images/Background1.png);
 }
 
 .header__menu {
