@@ -1,0 +1,36 @@
+$info:#D8D8D8;
+
+.footer{
+    position: relative;
+    width: 1000px;
+    bottom: 175px;
+
+    &__container{
+        display: flex;
+        height: 90px;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #222F33;
+
+    }
+    &__mail{
+        a{
+            color: $info;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    // &__logo{
+
+    // }
+    &__info{
+        a{
+            padding-right: 30px;
+            color: $info;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
