@@ -425,8 +425,6 @@ h1, h2, h3, h4, h5, h6 {
        column-count: 2;
   -moz-column-width: 125px;
        column-width: 125px;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
 }
 @media all and (max-width: 767px) {
   .bloc-4__ul {
