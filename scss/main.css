@@ -278,6 +278,11 @@
 .bloc-4__list {
   padding: 0px 0px 27px 0px;
 }
+@media all and (max-width: 767px) {
+  .bloc-4__list {
+    padding: 0px 0px 15px 0px;
+  }
+}
 .bloc-4__list h2 {
   white-space: nowrap;
   color: #222f33;
