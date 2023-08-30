@@ -428,6 +428,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media all and (max-width: 767px) {
   .bloc-4__ul {
+    -moz-column-count: 1;
+         column-count: 1;
+    -moz-column-width: 125px;
+         column-width: 125px;
     text-align: center;
   }
 }

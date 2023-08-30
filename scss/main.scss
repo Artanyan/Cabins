@@ -244,6 +244,8 @@
     column-count: 2;
     column-width: 125px;
     @media all and (max-width:767px){
+        column-count: 1;
+        column-width: 125px;
         text-align: center;
     }
 }

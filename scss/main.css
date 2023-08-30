@@ -271,6 +271,10 @@
 }
 @media all and (max-width: 767px) {
   .bloc-4__ul {
+    -moz-column-count: 1;
+         column-count: 1;
+    -moz-column-width: 125px;
+         column-width: 125px;
     text-align: center;
   }
 }
