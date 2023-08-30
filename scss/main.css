@@ -237,7 +237,7 @@
   .bloc-4__img {
     display: flex;
     justify-content: center;
-    padding: 30px 10px 10px;
+    padding: 30px 30px 10px;
     margin-bottom: 0px;
   }
 }
@@ -260,7 +260,7 @@
 @media all and (max-width: 767px) {
   .bloc-4__list-info {
     display: block;
-    padding: 30px 40px 10px 75px;
+    padding: 30px;
   }
 }
 
