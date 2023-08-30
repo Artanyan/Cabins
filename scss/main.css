@@ -259,6 +259,7 @@
 }
 @media all and (max-width: 767px) {
   .bloc-4__list-info {
+    display: block;
     padding: 30px 40px 10px 75px;
   }
 }
