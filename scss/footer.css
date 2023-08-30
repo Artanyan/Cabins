@@ -9,14 +9,36 @@
   align-items: center;
   background-color: #222F33;
 }
+@media all and (max-width: 530px) {
+  .footer__container {
+    display: grid;
+    padding: 20px;
+    height: 150px;
+  }
+}
+@media all and (max-width: 530px) {
+  .footer__mail {
+    padding-bottom: 10px;
+  }
+}
 .footer__mail a {
   color: #D8D8D8;
 }
 .footer__mail a:hover {
   text-decoration: underline;
 }
+@media all and (max-width: 530px) {
+  .footer__logo {
+    padding-bottom: 10px;
+  }
+}
+@media all and (max-width: 530px) {
+  .footer__info {
+    padding-bottom: 10px;
+  }
+}
 .footer__info a {
-  padding-right: 30px;
+  padding-right: 10px;
   color: #D8D8D8;
 }
 .footer__info a:hover {

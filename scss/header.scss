@@ -2,6 +2,9 @@
     height: 600px;
     background-image:url(../images/Background1.png);
     background-size: cover;
+    @media all and (max-width:767px){
+        height: auto;
+    }
 }
 
 .header__menu{
@@ -11,6 +14,15 @@
     justify-content: space-between;
     img{
         margin-right: 40px;
+    }
+    
+    @media all and (max-width:1024px){
+        padding: 35px 80px;
+        margin-bottom: 80px;
+    }
+    @media all and (max-width:767px){
+        padding: 20px 50px;
+        margin-bottom: 40px;
     }
 }
 

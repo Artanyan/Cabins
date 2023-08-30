@@ -1,6 +1,10 @@
 .main{
     display: flex;
     padding: 0px 105px;
+    @media all and (max-width:767px){
+        display: grid;
+        padding: 0px 80px;
+    }
 }
 // .main__hero{
 
@@ -8,6 +12,9 @@
 .main__info{
     max-width: 440px;
     margin-right: 130px;
+    @media all and (max-width:767px){
+        margin-right: 0px;   
+    }
         h1{
             color: #ffffff;
             padding-bottom: 12px;
@@ -17,6 +24,12 @@
             font-size: 31px;
             font-weight: 400;
             line-height: 36px;
+            @media all and (max-width:767px){
+                font-size: 18px;
+                line-height: 28px;
+                margin-right: 0px;
+                margin-bottom: 65px;
+            }
         }
 }
 .main__film{
@@ -28,6 +41,9 @@
             &:hover{
                 text-decoration: underline;
             }
+            @media all and (max-width:767px){
+                margin-bottom: 85px;
+            }
         }
 }
 
@@ -36,13 +52,15 @@
     display: flex;
     position: relative;
     z-index: 2;
+    @media all and (max-width:767px){
+        display: block;
+    }
 }
 .material__container{
     display: flex;
     justify-content: center;
     background-color: #ffffff;
     align-items: center;
-    height: 400px;
     padding: 0px 100px;
     @media all and (max-width:1023px) {
         padding: 0px 50px;
@@ -50,16 +68,24 @@
 }
 
 .material__content{
-    margin-bottom: 20px;
+    margin: 20px 0px;
      h2{
             font-size: 31px;
             font-weight: 400;
             line-height: 36px;
             padding-bottom: 13px;
+            @media all and (max-width:1023px) {
+                font-size: 18px;
+                line-height: 28px;
+            }
      }
      p{
         line-height: 26px;
         padding-bottom: 13px;
+        @media all and (max-width:1023px) {
+            line-height: 23px;
+            text-align: justify;
+        }
      }
      button{
         width: 90px;
@@ -84,6 +110,11 @@
     position: relative;
     bottom: 100px;
     right: 40px;
+    @media all and (max-width:767px){
+        bottom: 0px;
+        right: 0px;
+        padding: 30px;  
+    }
 }
 
 .swiper {
@@ -140,9 +171,14 @@
 .bloc-3__container{
     display: flex;
     padding: 230px 95px 75px;
+    @media all and (max-width:767px){
+        padding: 230px 50px 30px;
+        text-align: center;
+    }
 }
 .bloc-3__innovatie{
     display: block;
+    
     h2{
         color: #ffffff;
         font-size: 31px;
@@ -167,23 +203,50 @@
     display: flex;
     position: relative;
     bottom: 175px;
+
+    @media all and (max-width:767px){
+        display: block;
+    }
 }
 
 .bloc-4__img{
     padding: 85px 75px 10px;
     margin-bottom: 40px;
+    @media all and (max-width:767px){
+        display: flex;
+        justify-content: center;
+        
+        padding: 30px 10px 10px;
+        margin-bottom: 0px;
+    }
+    img{
+        @media (min-width:425px) and (max-width:767px){
+            width: 50%;
+        }
+        @media all and (max-width:424px){
+            width: 100%;
+        }
+    }
+    
 }
 
 .bloc-4__list-info{
     display: grid;
     grid-template-columns: auto;
     padding: 80px 40px 10px 0px;
+    @media all and (max-width:767px){
+        padding: 30px 40px 10px 75px;
+    }
+    
 }
 
 .bloc-4__ul{
     column-count: 2;
     column-width: 125px;
     column-gap: 20px;
+    @media all and (max-width:767px){
+        text-align: center;
+    }
 }
 
 .bloc-4__list{

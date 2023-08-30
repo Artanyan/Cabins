@@ -38,6 +38,7 @@
 /* Змінюємо гамбургер іконку, коли меню відчинено */
 .menu-btn.active {
     position: fixed;
+	z-index: 11;
 }
 .menu-btn.active span:nth-of-type(1) {
   display: none;
@@ -66,6 +67,7 @@
 
 .menu.active {
 	transform: translateX(0);
+	z-index: 10;
 }
 
 .menu li {

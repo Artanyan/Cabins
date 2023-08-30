@@ -11,9 +11,16 @@ $info:#D8D8D8;
         justify-content: space-around;
         align-items: center;
         background-color: #222F33;
-
+        @media all and (max-width:530px){
+            display: grid;
+            padding: 20px;
+            height: 150px;
+        }
     }
     &__mail{
+        @media all and (max-width:530px){
+        padding-bottom: 10px;
+        }
         a{
             color: $info;
             &:hover{
@@ -21,12 +28,17 @@ $info:#D8D8D8;
             }
         }
     }
-    // &__logo{
-
-    // }
+    &__logo{
+        @media all and (max-width:530px){
+            padding-bottom: 10px;
+            }
+    }
     &__info{
+        @media all and (max-width:530px){
+            padding-bottom: 10px;
+            }
         a{
-            padding-right: 30px;
+            padding-right: 10px;
             color: $info;
             &:hover{
                 text-decoration: underline;

@@ -3,6 +3,11 @@
   background-image: url(../images/Background1.png);
   background-size: cover;
 }
+@media all and (max-width: 767px) {
+  .header__container {
+    height: auto;
+  }
+}
 
 .header__menu {
   display: flex;
@@ -12,6 +17,18 @@
 }
 .header__menu img {
   margin-right: 40px;
+}
+@media all and (max-width: 1024px) {
+  .header__menu {
+    padding: 35px 80px;
+    margin-bottom: 80px;
+  }
+}
+@media all and (max-width: 767px) {
+  .header__menu {
+    padding: 20px 50px;
+    margin-bottom: 40px;
+  }
 }
 
 .header__nav {
