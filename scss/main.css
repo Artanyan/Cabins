@@ -108,6 +108,7 @@
   height: 35px;
   border-radius: 4px;
   border: 1px solid #000000;
+  color: inherit;
   background-color: #ffffff;
   transition-duration: 0.4s;
 }
