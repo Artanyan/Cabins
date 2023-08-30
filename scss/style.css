@@ -426,16 +426,6 @@ h1, h2, h3, h4, h5, h6 {
   -moz-column-width: 125px;
        column-width: 125px;
 }
-@media (min-width: 401px) and (max-width: 410px) {
-  .bloc-4__ul {
-    padding: 5px;
-  }
-}
-@media (min-width: 488px) and (max-width: 497px) {
-  .bloc-4__ul {
-    padding: 5px;
-  }
-}
 @media all and (max-width: 767px) {
   .bloc-4__ul {
     text-align: center;
@@ -444,7 +434,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .bloc-4__list {
   padding: 0px 0px 27px 0px;
-  margin-right: 60px;
 }
 .bloc-4__list h2 {
   white-space: nowrap;

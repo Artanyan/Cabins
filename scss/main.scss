@@ -243,12 +243,6 @@
 .bloc-4__ul{
     column-count: 2;
     column-width: 125px;
-    @media (min-width:401px) and (max-width:410px){
-        padding: 5px;
-    }
-    @media (min-width:488px) and (max-width:497px){
-        padding: 5px;
-    }
     @media all and (max-width:767px){
         text-align: center;
     }
@@ -256,7 +250,7 @@
 
 .bloc-4__list{
     padding: 0px 0px 27px 0px;
-    margin-right: 60px;
+
     h2{
         white-space: nowrap;
         color: #222f33;
