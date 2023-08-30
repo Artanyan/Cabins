@@ -243,7 +243,9 @@
 .bloc-4__ul{
     column-count: 2;
     column-width: 125px;
-    
+    @media (min-width:401px) and (max-width:410px){
+        padding: 5px;
+    }
     @media (min-width:488px) and (max-width:497px){
         padding: 5px;
     }

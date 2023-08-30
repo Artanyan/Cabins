@@ -269,6 +269,11 @@
   -moz-column-width: 125px;
        column-width: 125px;
 }
+@media (min-width: 401px) and (max-width: 410px) {
+  .bloc-4__ul {
+    padding: 5px;
+  }
+}
 @media (min-width: 488px) and (max-width: 497px) {
   .bloc-4__ul {
     padding: 5px;
