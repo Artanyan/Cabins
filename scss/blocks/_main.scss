@@ -1,9 +1,12 @@
-.main{
+.bloc-1{
     display: flex;
-    padding: 0px 105px;
+    padding: 300px 105px;
+    justify-content: space-evenly;
+    background-image:url(../images/Background1.png);
+    background-size: cover;
     @media all and (max-width:767px){
         display: grid;
-        padding: 0px 80px;
+        padding: 150px 40px;
     }
 }
 // .main__hero{
@@ -36,13 +39,11 @@
     display: flex;
         a{
             display: flex;
+            white-space: nowrap;
             align-items: center;
             color: #ffffff;
             &:hover{
                 text-decoration: underline;
-            }
-            @media all and (max-width:767px){
-                margin-bottom: 85px;
             }
         }
 }
@@ -166,13 +167,13 @@
 .bloc-3{
     position: relative;
     background-color: #222F33;
-    bottom: 175px;
+
 }
 .bloc-3__container{
     display: flex;
-    padding: 230px 95px 75px;
+    padding: 75px 95px 75px;
     @media all and (max-width:767px){
-        padding: 230px 50px 30px;
+        padding: 45px 50px 30px;
         text-align: center;
     }
 }
@@ -202,7 +203,6 @@
 .bloc-4{
     display: flex;
     position: relative;
-    bottom: 175px;
 
     @media all and (max-width:767px){
         display: block;

@@ -70,20 +70,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
-.header__container {
-  height: 600px;
-  background-image: url(../images/Background1.png);
-  background-size: cover;
-}
-@media all and (max-width: 767px) {
-  .header__container {
-    height: auto;
-  }
+.header {
+  position: absolute;
+  width: 100%;
 }
 
 .header__menu {
   display: flex;
-  margin-bottom: 120px;
   padding: 35px 100px;
   justify-content: space-between;
 }
@@ -155,14 +148,17 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.main {
+.bloc-1 {
   display: flex;
-  padding: 0px 105px;
+  padding: 300px 105px;
+  justify-content: space-evenly;
+  background-image: url(../images/Background1.png);
+  background-size: cover;
 }
 @media all and (max-width: 767px) {
-  .main {
+  .bloc-1 {
     display: grid;
-    padding: 0px 80px;
+    padding: 150px 40px;
   }
 }
 
@@ -199,16 +195,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .main__film a {
   display: flex;
+  white-space: nowrap;
   align-items: center;
   color: #ffffff;
 }
 .main__film a:hover {
   text-decoration: underline;
-}
-@media all and (max-width: 767px) {
-  .main__film a {
-    margin-bottom: 85px;
-  }
 }
 
 .bloc-2 {
@@ -340,16 +332,15 @@ h1, h2, h3, h4, h5, h6 {
 .bloc-3 {
   position: relative;
   background-color: #222F33;
-  bottom: 175px;
 }
 
 .bloc-3__container {
   display: flex;
-  padding: 230px 95px 75px;
+  padding: 75px 95px 75px;
 }
 @media all and (max-width: 767px) {
   .bloc-3__container {
-    padding: 230px 50px 30px;
+    padding: 45px 50px 30px;
     text-align: center;
   }
 }
@@ -379,7 +370,6 @@ h1, h2, h3, h4, h5, h6 {
 .bloc-4 {
   display: flex;
   position: relative;
-  bottom: 175px;
 }
 @media all and (max-width: 767px) {
   .bloc-4 {
@@ -462,10 +452,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 22px;
 }
 
-.footer {
-  position: relative;
-  bottom: 175px;
-}
 .footer__container {
   display: flex;
   height: 90px;
@@ -569,11 +555,5 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 body {
-  margin: auto;
   font-family: Rubik;
-}
-
-.container {
-  max-width: 1000px;
-  margin: auto;
 }/*# sourceMappingURL=style.css.map */
